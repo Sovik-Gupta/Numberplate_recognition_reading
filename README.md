@@ -1,42 +1,42 @@
-# Automatic-Number-Plate-Recognition-YOLOv8
+# Number Plate Recognition & Reader
 ## Demo
 
 
-https://github.com/Muhammad-Zeerak-Khan/Automatic-License-Plate-Recognition-using-YOLOv8/assets/79400407/1af57131-3ada-470a-b798-95fff00254e6
+https://github.com/Sovik-Gupta/Numberplate_recognition_reading/assets/27665277/51bf4b7e-2264-4d8a-bbd0-2aeccf2f79f8
 
 
 
-## Data
 
-The video I used in this tutorial can be downloaded [here](https://drive.google.com/file/d/1JbwLyqpFCXmftaJY1oap8Sa6KfjoWJta/view?usp=sharing).
+
+
 
 ## Model
 
-A Yolov8 pre-trained model (YOLOv8n) was used to detect vehicles.
+1) A Yolov8 pre-trained model (YOLOv8n) to detect cars/truck/bus
 
-A licensed plate detector was used to detect license plates. The model was trained with Yolov8 using [this dataset](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4). 
-- The model is available [here](https://drive.google.com/file/d/1Zmf5ynaTFhmln2z7Qvv-tgjkWQYQ9Zdw/view?usp=sharing).
+2) A LPD(Licensed Plate Detector) reads the plate adn captures the image. 
+- The LPD model is available [here](https://drive.google.com/file/d/1Zmf5ynaTFhmln2z7Qvv-tgjkWQYQ9Zdw/view?usp=sharing).
 
 ## Dependencies
 
-The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort).
+PLease download the sort model from [this repository](https://github.com/abewley/sort).
 
 ## Project Setup
 
 * Make an environment with python=3.8 using the following command 
 ``` bash
-conda create --prefix ./env python==3.8 -y
+conda create --name .venv
 ```
 * Activate the environment
 ``` bash
-conda activate ./env
+conda activate .venv
 ``` 
 
-* Install the project dependencies using the following command 
+* Install the dependencies using the following command 
 ```bash
 pip install -r requirements.txt
 ```
-* Run main.py with the sample video file to generate the test.csv file 
+* Run main.py with your respective Video and it will cerate a test.csv
 ``` python
 python main.py
 ```
